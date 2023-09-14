@@ -1,0 +1,33 @@
+body {
+    font-family: 'Noto Sans TC','Noto Sans HK', sans-serif, serif;
+    background-color:#a4a8b4 ;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 100px;
+    border: 7px solid #ffffff;
+    background-color: transparent;
+    border-radius: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #000000;
+}
+
+h1, label{
+    font-weight: 1000;
+}
+
+h1{
+    text-align: center;
+}
+

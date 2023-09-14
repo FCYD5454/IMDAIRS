@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="LoginInstyle.css">
+ 	<link rel="stylesheet" href="/Index/index.css">
+
+</head>
+
+<body>
+
+	<nav class="navbar">
+		<img src="/Resoures/MDARS.png" style="float: left; width: 49px; margin-left: 4px;">
+		<a href="/Index/index.html">首頁</a>
+		<a href="/Index/Movie.html">電影</a>
+		<a href="/Index/TicketOrder.html">訂票頁面</a>
+		<a href="/Index/AboutUs.html">關於我們</a>
+	</nav>
+	
+	<div>
+		<h1>Hong Kong MDIARS Login</h1>
+
+		<form id="login-form">
+
+			<label for="username">用户名/電子郵件</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="password">密碼</label>
+			<input type="password" id="password" name="password" required>
+			
+			<label for="remember-me"><input type="checkbox">記住我<a href="#">忘記密碼</a></a></label>
+
+			<button type="submit">登錄</button>
+
+			<a href="/Index/SLIN/SignIn.html" class="button" >點擊注冊</a>
+		</form>
+	</div>
+
+	<div id="error-message"></div>
+	<script src="Loginscript.js"></script>
+	<script src="index.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+    
+<body style="overflow: scroll;">   
+  
+  <nav class="navbar">
+    <img src="..\Resoures\MDARS.png" style="float: left; width: 49px; margin-left: 4px;">
+    <a href="..\Index\index.html">首頁</a>
+    <a href="..\Index\Movie.html">電影</a>
+    <a href="..\Index\TicketOrder.html">訂票頁面</a>
+    <a href="..\Index\AboutUs.html">關於我們</a>  
+
+    <button id="btn">注冊/登錄</button> 
+
+    <div class="searchbar">
+      <button id="searchButton"><ion-icon name="search-outline"></ion-icon></ion-icon></button>
+      <input type="text" id="searchInput" placeholder="">
+      <button id="deleteButton"><ion-icon name="close-outline"></ion-icon></button>
+    </div>  
+
+    
+    <script>
+      var button = document.getElementById('btn');
+      button.addEventListener("click", function() {
+        window.location.assign("SLIN/Login.html");
+      });    
+    </script>
+  </nav>
+  <script src="index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

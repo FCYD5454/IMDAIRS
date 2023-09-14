@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/Index/index.css">
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@600&family=Noto+Sans+TC:wght@600&family=Noto+Serif+TC:wght@700&display=swap');
+       
+        body {
+            font-family: 'Noto Sans TC', 'Noto Sans HK', sans-serif;
+            background-color: #e9e2d4;
+            margin: 0;
+        }
+
+        .topic {
+            text-align: center;
+            font-size: 36px;
+            margin: 20px 0;
+            color: #8b6014;
+        } 
+
+        .intr2 {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-left: 10%;
+            margin-top: 32%;
+        }
+
+        .ticketbtn {
+            background-color: #FFC764;
+            color: #1b1e30;
+            border: none;
+            padding: 5px 2px;
+            font-size: 32px;
+            font-weight: bold;
+            width: 300px;
+            cursor: pointer;
+            box-shadow: 5px 5px #5e4c23;
+        }
+
+        .ticketbtn:hover {
+            background-color: #1b1e30;
+            color: #FFC764;
+        }
+
+        .cover {
+            width: 300px;
+            border: 1px solid #ffffff;
+            box-shadow: 3px 5px #5e4c23;
+        }
+
+        .left {
+            flex: 1; 
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 10%;
+            top: 20%;
+        }
+
+        .icons{
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .icons ion-icon:hover{
+            color: red;
+        }
+        
+        .utube{
+            position: absolute;
+            left: 6.5%
+        }
+        
+    </style>    
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="..\Resoures\MDARS.png" style="float: left; width: 49px; margin-left: 4px;">
+        <a href="..\Index\index.html">首頁</a>
+        <a href="..\Index\Movie.html">電影</a>
+        <a href="..\Index\TicketOrder.html">訂票頁面</a>
+        <a href="..\Index\AboutUs.html">關於我們</a>  
+    
+        <img src="" class="pofit-logo"> 
+        <div class="searchbar">
+            <button id="searchButton"><ion-icon name="search-outline"></ion-icon></ion-icon></button>
+            <input type="text" id="searchInput" placeholder="">
+            <button id="deleteButton"><ion-icon name="close-outline"></ion-icon></button>
+        </div>  
+        <script>
+            document.getElementById('btn').addEventListener("click", function() {
+              window.location.assign("SLIN/Login.html");
+            });    
+          </script>
+        </nav>
+        <div class="userpofit">
+            <div  class="iconame">  
+              <img src="..\Resoures\MDARS.png">
+              <h1 id="username">MDIARSuser</h3>
+            </div>
+            <button id="Logout">Log out</button>
+          </div>
+      
+    <h1 class="topic">蜘蛛俠飛躍蜘蛛宇宙</h1>
+    <iframe width="1100" height="580" src="https://www.youtube.com/embed/45fRvP7UbIU?si=3AMC7W50uLwFGmcr" class="utube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <div class="right">
+        <img src="\Resoures\MDARS.png" class="cover">
+        <button class="ticketbtn">BUY</button>
+        <div class="icons">
+            <ion-icon name="heart-outline" style="width: 100%;height: 60px;"></ion-icon>
+            <ion-icon name="share-social-outline"style="width: 100%;height: 60px;"></ion-icon>
+        </div> 
+    </div>
+
+    <br>
+    <div class="left">       
+        <h2 class="intr2">片種: 動畫<br>          
+            語言: 英語<br>
+            字幕: 中文<br>
+            片長: 140 分鐘<br>
+            級別: IIA (香港), B(澳門)<br>
+            上映日期: 2023年 6月 1日(四)
+        </h2>
+    </div>
+
+    <br><br>
+    <iframe src="/Index/Seating.html" width="530"px height="480"px></iframe>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

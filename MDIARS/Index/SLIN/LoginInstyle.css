@@ -1,0 +1,59 @@
+body {
+	font-family: 'Noto Sans TC','Noto Sans HK', sans-serif, serif;
+}
+
+h1 {		
+	text-align: center;
+	max-width: 430px;
+	margin: auto;
+	color:rgb(235, 204, 121); 
+	padding-bottom: 5px;
+	background-color:#1b1e30;
+	border-radius: 50px;
+	
+}
+
+form {
+	background-color: #f0b46b;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(240, 180, 107, 1);
+	margin: 250px auto;
+	max-width: 500px;
+	padding: 20px;
+	width: 250%;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+
+button {
+	background-color: #251e25;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+}
+
+#error-message {
+	color: red;
+	margin: auto;
+	text-align: center;
+
+}
+
